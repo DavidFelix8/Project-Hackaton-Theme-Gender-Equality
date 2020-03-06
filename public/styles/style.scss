@@ -52,6 +52,7 @@ p {
 img {
   width: 100%;
   max-width: 100%;
+  height: 92vh;
 }
 
 form {
@@ -75,4 +76,19 @@ button,
 textarea {
   min-height: 8em;
   resize: vertical;
+}
+
+#navbar {
+  min-height: 2vh;
+  background-color: green($color: #000000);
+}
+
+//formUser.hbs
+#formUser-btn {
+  color: black;
+  text-decoration: none;
+  width: 15%;
+  padding: 0.8rem;
+  margin-top: 0.2rem;
+  background-color: red;
 }

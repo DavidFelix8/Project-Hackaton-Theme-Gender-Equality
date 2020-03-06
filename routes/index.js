@@ -6,7 +6,7 @@ const dataJson = require('../ratings.json');
 
 router.get('/', (req, res, next) => {
   // console.log(dataJson);
-  res.render('index', { dataJson });
+  res.render('index');
 });
 
 //Router Post Main Page Form User
