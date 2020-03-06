@@ -6,6 +6,22 @@ const schema = new mongoose.Schema({
   name: {
     type: String,
     trim: true
+  },
+  gender: {
+    type: String,
+    trim: true
+  },
+  company_name: {
+    type: String,
+    trim: true
+  },
+  sex_orientation: {
+    type: String,
+    trim: true
+  },
+  salary_satisfaction: {
+    type: String,
+    trim: true
   }
 });
 
