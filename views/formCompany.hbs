@@ -1,7 +1,7 @@
 <form action="" method="POST">
    <div class="containerFormCompany">
-     <label for="formCompany-companyName">Company Name</label>
-      <input type="text" name="CompanyForm-companyName" id="formCompany-companyName" maxlength="30" value= ""/>
+     <label for="formCompany-companyName">Company Name <input type="text" name="CompanyForm-companyName" id="formCompany-companyName" maxlength="30" value= ""/></label>
+      
 <div class="form-group col-md-4">
        <label for="formUser-location">Location</label>
     <select id="formUser-location" name="userForm-location">
@@ -28,28 +28,68 @@
     </select>
     </div>
 
-    <label for="formCompany-Opportunity">Opportunity</label>
-    <input type="number" id="formCompany-Opportunity" name="CompanyForm-Opportunity"
+   <h2>How would you rate the career opportunities in your company?</h2>
+    <label for="formCompany-equal_opportunity">Equal-Opportunity</label>
+    <input type="number" id="formCompany-equal_opportunity" name="CompanyForm-equal_opportunity" value="0"
+       min="1" max="5" >
+    <label for="formCompany-leadership_female_representation">Leadership Female Representation</label>
+    <input type="number" id="formCompany-leadership_female_representation" name="CompanyForm-leadership_female_representation" value="0"
+       min="1" max="5" >
+    <label for="formCompany-women_management_opportunities">Women Management Opportunities</label>
+    <input type="number" id="formCompany-women_management_opportunities" name="CompanyForm-women_management_opportunities" value="0"
+       min="1" max="5" >
+
+
+   <h2>How would you rate the family support in your company?</h2>
+    <label for="formCompany-maternity_adoptive_leave">Maternity Adoptive Leave</label>
+    <input type="number" id="formCompany-maternity_adoptive_leave" name="CompanyForm-maternity_adoptive_leave" value="0"
+       min="1" max="5" >
+    <label for="formCompany-family_growth_support">Family growth support</label>
+    <input type="number" id="formCompany-family_growth_support" name="CompanyForm-family_growth_support" value="0"
+       min="1" max="5" >
+
+
+   <h2>How would you rate the flexible working hours in your company?</h2>
+    <label for="formCompany-paid_time_off">Paid Time Off</label>
+    <input type="number" id="formCompany-paid_time_off" name="CompanyForm-paid_time_off" value="0"
+       min="1" max="5">
+    <label for="formCompany-flexible_work_hours">Flexible Work Hours</label>
+    <input type="number" id="formCompany-flexible_work_hours" name="CompanyForm-flexible_work_hours" value="0"
+       min="1" max="5">
+    <label for="formCompany-ability_to_telecommute">Ability To Telecommute</label>
+    <input type="number" id="formCompany-paid_time_off" name="CompanyForm-ability_to_telecommute" value="0"
        min="1" max="5">
 
-    <label for="formCompany-family">Family</label>
-    <input type="number" id="formCompany-family" name="CompanyForm-family"
+
+   <h2>How would you rate the company culture in your company?</h2>
+    <label for="formCompany-salary_satisfaction">Salary Satisfaction</label>
+    <input type="number" id="formCompany-salary_satisfaction" name="CompanyForm-salary_satisfaction" value="0"
+       min="1" max="5">
+    <label for="formCompany-sponsorship_or_mentorship_program">Sponsorship or mentorship program</label>
+    <input type="number" id="formCompany-sponsorship_or_mentorship_program" name="CompanyForm-sponsorship_or_mentorship_program" value="0"
+       min="1" max="5">
+    <label for="formCompany-learning_opportunities">Learning Opportunities</label>
+    <input type="number" id="formCompany-learning_opportunities" name="CompanyForm-learning_opportunities" value="0"
+       min="1" max="5">
+    <label for="formCompany-wellness_initiatives">Wellness Initiatives</label>
+    <input type="number" id="formCompany-wellness_initiatives" name="CompanyForm-wellness_initiatives" value="0"
        min="1" max="5">
 
-    <label for="formCompany-schedule_flex">Schedule Flex</label>
-    <input type="number" id="formCompany-schedule_flex" name="CompanyForm-schedule_flex"
+
+   <h2>How would you rate the personal development in your company?</h2>
+    <label for="formCompany-employer_responsiveness">Employer Responsiveness</label>
+    <input type="number" id="formCompany-employer_responsiveness" name="CompanyForm-employer_responsiveness" value="0"
+       min="1" max="5">
+    <label for="formCompany-people_you_work_with">People you work with</label>
+    <input type="number" id="formCompany-people_you_work_with" name="CompanyForm-people_you_work_with" value="0"
+       min="1" max="5">
+    <label for="formCompany-social_activities_environment">Social activities environment</label>
+    <input type="number" id="formCompany-social_activities_environment" name="CompanyForm-social_activities_environment" value="0"
        min="1" max="5">
 
-    <label for="formCompany-enrichment">Enrichment</label>
-    <input type="number" id="formCompany-enrichment" name="CompanyForm-enrichment"
-       min="1" max="5">
-
-    <label for="formCompany-culture">Culture</label>
-    <input type="number" id="formCompany-culture" name="CompanyForm-culture"
-       min="1" max="5">
-
+   <h2>How would you rate the your company?</h2>
     <label for="formCompany-overall-satisfaction">Overall Satisfaction</label>
-    <input type="number" id="formCompany-overall-satisfaction" name="CompanyForm-overall-satisfaction"
+    <input type="number" id="formCompany-overall-satisfaction" name="CompanyForm-overall-satisfaction" value="0"
        min="1" max="5">
 <div class="btnG">
     <button id="btn-form" class="btn btnG btn-outline-secondary">Submit</button>

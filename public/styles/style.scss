@@ -53,15 +53,13 @@ p {
   }
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-  height: 90vh;
-}
-
 form {
   display: flex;
   flex-direction: column;
+  input,
+  select {
+    margin-bottom: 1rem;
+  }
 }
 
 #navbar {
@@ -70,13 +68,48 @@ form {
 }
 
 //index.hbs
+<<<<<<< HEAD
+=======
+.index-img-left {
+  width: 100%;
+  max-width: 100%;
+  height: 90vh;
+}
+
+@media (max-width: 767px) {
+  .index-img-left {
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+  }
+}
+
+.form-User-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+>>>>>>> da527eae83a8787c4b36ca2589dd96b450e4a781
 
 //formUser.hbs
-#formUser-btn {
+.form-User-btn {
+  margin-top: 2rem;
+}
+
+#formUser-a {
   color: black;
   text-decoration: none;
 }
+<<<<<<< HEAD
 .containerUser {
+=======
+
+.form-User-name {
+  margin-top: 7rem;
+}
+
+.container {
+>>>>>>> da527eae83a8787c4b36ca2589dd96b450e4a781
   padding: 5% 10%;
 }
 .orientation {
