@@ -11,6 +11,7 @@ const sassMiddleware = require('node-sass-middleware');
 const serveFavicon = require('serve-favicon');
 const indexRouter = require('./routes/index');
 const companiesRouter = require('./routes/companies');
+const UsersRouter = require('./routes/users');
 
 const hbs = require('hbs');
 
@@ -55,6 +56,7 @@ app.use(
 
 app.use('/', indexRouter);
 app.use('/', companiesRouter);
+app.use('/', UsersRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => {

@@ -24,9 +24,14 @@ router.get('/', (req, res, next) => {
 router.get('/formCompany', (req, res, next) => {
   res.render('formCompany');
 });
-//Router Post Second Form about company
-/* router.post('', (req, res, next) => {
 
-})
- */
+//Router Post Second Form about company
+router.post('/formCompany', (req, res, next) => {
+  res.redirect('/submitted');
+});
+
+router.get('/submitted', (req, res, next) => {
+  res.render('submitted');
+});
+
 module.exports = router;
