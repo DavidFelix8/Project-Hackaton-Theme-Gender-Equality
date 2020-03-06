@@ -1,8 +1,8 @@
 <form action="" method="POST">
-   <div>
+   <div class="containerFormCompany">
      <label for="formCompany-companyName">Company Name</label>
       <input type="text" name="CompanyForm-companyName" id="formCompany-companyName" maxlength="30" value= ""/>
-
+<div class="form-group col-md-4">
        <label for="formUser-location">Location</label>
     <select id="formUser-location" name="userForm-location">
       <option value="Lisboa">Lisboa</option>
@@ -26,6 +26,7 @@
       <option value="Bragança">Bragança</option>
       <option value="Portalegre">Portalegre</option>
     </select>
+    </div>
 
     <label for="formCompany-Opportunity">Opportunity</label>
     <input type="number" id="formCompany-Opportunity" name="CompanyForm-Opportunity"
@@ -51,6 +52,7 @@
     <input type="number" id="formCompany-overall-satisfaction" name="CompanyForm-overall-satisfaction"
        min="1" max="5">
 
-    <button>Submit</button>
+    <button id="btn-form" class="btn btnG btn-outline-secondary">Submit</button>
+    
 </form> 
 </div>

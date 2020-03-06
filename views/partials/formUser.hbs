@@ -1,5 +1,5 @@
+<div class="container">
 <h2>Form User</h2>
-
 <form action="" method="POST">
     <label for="formUser-name">Name</label>
     <input type="text" name="userForm-name" id="formUser-name" maxlength="20" value= ""/>
@@ -13,7 +13,7 @@
     </select>
 
     <label for="formUser-sexOrientation">Sex Orientation</label>
-    <select id="formUser-sexOrientation" name="userForm-sexOrientation">
+    <select class="orientation" id="formUser-sexOrientation" name="userForm-sexOrientation">
       <option value="Heterosexual">Heterosexual</option>
       <option value="Gay/Lesbian">Gay/Lesbian</option>
       <option value="Bisexual">Bisexual</option>
@@ -21,5 +21,6 @@
       <option value="PreferNotToSay">Prefer not to say</option>
     </select>
 
-    <a href="/formCompany">Continue</a>
+    <button class="btn btn-outline-secondary btnG"><a href="/formCompany" >Continue</a></button>
+  </div> 
 </form> 
