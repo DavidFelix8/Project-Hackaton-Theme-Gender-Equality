@@ -1,10 +1,32 @@
 'use strict';
-
 const { Router } = require('express');
 const router = new Router();
 
+const dataJson = require('../ratings.json');
+
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Hello World!' });
+  // console.log(dataJson);
+  res.render('index', { dataJson });
 });
 
+//Router Post Main Page Form User
+/* router.post('/formUser', (req, res, next) => {
+  
+  .then(data => {
+   res.redirect(`/formCompany`);
+  })
+  .catch(error => {
+    next(error);
+  });
+}) */
+
+//Second Form
+router.get('/formCompany', (req, res, next) => {
+  res.render('formCompany');
+});
+//Router Post Second Form about company
+/* router.post('', (req, res, next) => {
+
+})
+ */
 module.exports = router;

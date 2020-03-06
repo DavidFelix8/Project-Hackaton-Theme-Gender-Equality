@@ -9,13 +9,21 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "cloudinary": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
-    "hbs": "^4.0.4",
+    "express-session": "^1.17.0",
+    "hbs": "^4.1.0",
     "http-errors": "^1.7.3",
+    "json": "^9.0.6",
     "mongoose": "^5.6.13",
     "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^2.2.1",
     "node-sass-middleware": "^0.11.0",
     "serve-favicon": "^2.5.0"
   },

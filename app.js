@@ -3,12 +3,21 @@
 const { join } = require('path');
 const express = require('express');
 const createError = require('http-errors');
+const connectMongo = require('connect-mongo');
+const expressSession = require('express-session');
+const mongoose = require('mongoose');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const serveFavicon = require('serve-favicon');
 const indexRouter = require('./routes/index');
 
+const hbs = require('hbs');
+
+hbs.registerPartials(join(__dirname, 'views/partials'));
+
 const app = express();
+
+const dataJson = require('./ratings.json');
 
 app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -18,8 +27,7 @@ app.use(
   sassMiddleware({
     src: join(__dirname, 'public'),
     dest: join(__dirname, 'public'),
-    outputStyle:
-      process.env.NODE_ENV === 'development' ? 'nested' : 'compressed',
+    outputStyle: process.env.NODE_ENV === 'development' ? 'nested' : 'compressed',
     force: process.env.NODE_ENV === 'development',
     sourceMap: true
   })
@@ -27,6 +35,22 @@ app.use(
 app.use(express.static(join(__dirname, 'public')));
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
+app.use(
+  expressSession({
+    secret: process.env.SESSION_SECRET,
+    resave: true,
+    saveUninitialized: false,
+    cookie: {
+      maxAge: 60 * 60 * 24 * 15,
+      sameSite: 'lax',
+      httpOnly: true
+    },
+    store: new (connectMongo(expressSession))({
+      mongooseConnection: mongoose.connection,
+      ttl: 60 * 60 * 24
+    })
+  })
+);
 
 app.use('/', indexRouter);
 
