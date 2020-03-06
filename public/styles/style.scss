@@ -79,11 +79,15 @@ form {
   color: black;
   text-decoration: none;
 }
-.container {
+.containerUser {
   padding: 5% 10%;
 }
 .orientation {
   margin-bottom: 10px;
+}
+
+.content {
+  margin: 10% 0%;
 }
 
 //all companies
@@ -97,17 +101,42 @@ form {
 .containerFormCompany {
   display: flex;
   flex-direction: column;
-  padding: 5% 10%;
+  padding: 5% 30%;
 }
-
-#btnG {
-  margin-top: 30px;
-  height: 100px;
-  width: 100px;
+.btnG {
+  align-self: center;
+  margin-top: 20px;
 }
 
 //bestcompanies.hbs
 #bestcompanies {
   display: flex;
   align-self: center;
+  width: 60em;
+  height: 25em;
+  margin: 2% 10%;
+}
+
+//ironhack
+.imgList {
+  text-align: center;
+}
+
+.imgRating {
+  height: 12em;
+  width: 70em;
+  margin-top: 2em;
+}
+
+.imgSalaries {
+  margin-top: 5em;
+  height: 20em;
+  width: 80em;
+}
+
+.imgCategories {
+  margin: 0 auto;
+  height: 40em;
+  width: 50em;
+  margin: 50px;
 }
