@@ -1,9 +1,6 @@
 'use strict';
-
 const mongoose = require('mongoose');
-
 //company schema
-
 const schemaCompany = new mongoose.Schema({
   company_id: {
     type: String,
@@ -21,7 +18,5 @@ const schemaCompany = new mongoose.Schema({
     trimm: true
   }
 });
-
 const Company = mongoose.model('Company', schemaCompany);
-
 module.exports = Company;
