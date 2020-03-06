@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-*,*:before,*:after{box-sizing:border-box}body{max-width:90rem;padding:0 1em;margin:0 auto;font-family:sans-serif;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:2}a{color:inherit;text-decoration:none}nav{display:flex}nav a,nav button{padding:1em 0;border:0}nav a:not(:last-child),nav button:not(:last-child){margin-right:1em}nav a:first-child,nav button:first-child{margin-right:auto}h1,h2,h3,p{margin:0;line-height:inherit}h1:not(:last-child),h2:not(:last-child),h3:not(:last-child),p:not(:last-child){margin-bottom:1rem}img{width:100%;max-width:100%;height:90vh}form{display:flex;flex-direction:column}#navbar{min-height:2vh;background-color:0}#formUser-btn{color:black;text-decoration:none}.containerUser{padding:5% 10%}.orientation{margin-bottom:10px}.content{margin:10% 0%}.containerAllCompanies{padding:5% 10%}.containerFormCompany{display:flex;flex-direction:column;padding:5% 30%}.btnG{align-self:center;margin-top:20px}#bestcompanies{display:flex;align-self:center;width:60em;height:25em;margin:2% 10%}.imgList{text-align:center}.imgRating{height:12em;width:70em;margin-top:2em}.imgSalaries{margin-top:5em;height:20em;width:80em}.imgCategories{margin:0 auto;height:40em;width:50em;margin:50px}
-=======
 *, *:before, *:after {
   box-sizing: border-box; }
+
+* button:focus {
+  outline: 0; }
 
 body {
   max-width: 90rem;
@@ -56,6 +56,9 @@ form {
   min-height: 2vh;
   background-color: 0; }
 
+.navbar-users-link {
+  margin-left: 2rem; }
+
 .index-img-left {
   width: 100%;
   max-width: 100%;
@@ -88,22 +91,52 @@ form {
 .orientation {
   margin-bottom: 10px; }
 
+.content {
+  margin: 10% 0%; }
+
 .containerAllCompanies {
   padding: 5% 10%; }
 
 .containerFormCompany {
   display: flex;
   flex-direction: column;
-  padding: 5% 10%; }
+  padding: 5% 30%; }
 
-#btnG {
-  margin-top: 30px;
-  height: 100px;
-  width: 100px; }
+.btnG {
+  align-self: center;
+  margin-top: 20px; }
 
 #bestcompanies {
   display: flex;
-  align-self: center; }
->>>>>>> da527eae83a8787c4b36ca2589dd96b450e4a781
+  align-self: center;
+  width: 60em;
+  height: 25em;
+  margin: 2% 10%; }
+
+.imgList {
+  text-align: center; }
+
+.imgRating {
+  height: 12em;
+  width: 70em;
+  margin-top: 2em; }
+
+.imgSalaries {
+  margin-top: 5em;
+  height: 20em;
+  width: 80em; }
+
+.imgCategories {
+  margin: 0 auto;
+  height: 40em;
+  width: 50em;
+  margin: 50px; }
+
+.imgCompanies {
+  width: 100%;
+  height: 82vh; }
+
+.allImgs {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
